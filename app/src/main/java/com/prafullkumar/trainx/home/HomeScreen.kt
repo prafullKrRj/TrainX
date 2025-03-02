@@ -318,7 +318,7 @@ private fun TodayActivitiesSection(viewModel: HomeViewModel) {
             Text("Food Logs", style = MaterialTheme.typography.bodyMedium)
             todayFoodLogs.forEach {
                 ActivityItem(
-                    icon = ImageVector.vectorResource(R.drawable.baseline_restaurant_24),
+                    icon = ImageVector.vectorResource(com.prafullkumar.foodlog.R.drawable.baseline_restaurant_24),
                     title = it.foodName,
                     subtitle = it.mealType,
                     value = "+${it.calories} kcal"

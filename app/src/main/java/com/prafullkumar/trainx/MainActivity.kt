@@ -179,7 +179,7 @@ fun MainScreen(
                 onClick = { navController.navigate(AppRoutes.Food) },
                 icon = {
                     Icon(
-                        imageVector = ImageVector.vectorResource(R.drawable.outline_food_bank_24),
+                        imageVector = ImageVector.vectorResource(R.drawable.baseline_food_bank_24),
                         contentDescription = "Food"
                     )
                 },

@@ -5,7 +5,6 @@ plugins {
     id("com.google.devtools.ksp")
     id("org.jetbrains.kotlin.plugin.serialization")
 }
-
 android {
     namespace = "com.prafullkumar.trainxai"
     compileSdk = 35
@@ -15,8 +14,14 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
-    }
 
+        val apiKey: String = project.findProperty("generativeai.apikey") as String? ?: ""
+        buildConfigField("String", "GENERATIVE_AI_API_KEY", "\"$apiKey\"")
+    }
+    buildFeatures {
+        compose = true
+        buildConfig = true
+    }
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -32,9 +37,6 @@ android {
     }
     kotlinOptions {
         jvmTarget = "11"
-    }
-    buildFeatures {
-        compose = true
     }
 }
 dependencies {

@@ -59,7 +59,7 @@ import com.prafullkumar.common.domain.enums.ActivityLevel
 import com.prafullkumar.common.domain.enums.Gender
 import com.prafullkumar.common.domain.enums.Goal
 import com.prafullkumar.common.domain.model.UserData
-import com.tdee.profile.R
+import com.prafullkumar.profile.R
 import org.koin.androidx.compose.getViewModel
 
 @Composable

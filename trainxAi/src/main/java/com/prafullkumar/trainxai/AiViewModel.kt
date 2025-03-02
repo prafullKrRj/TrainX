@@ -2,6 +2,7 @@ package com.prafullkumar.trainxai
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.google.ai.client.generativeai.BuildConfig
 import com.google.ai.client.generativeai.GenerativeModel
 import com.google.ai.client.generativeai.type.Content
 import com.google.ai.client.generativeai.type.content
@@ -42,7 +43,7 @@ class AIViewModel(
                 if (userData.userName.isNotBlank()) {
                     generativeModel.value = GenerativeModel(
                         modelName = "gemini-2.0-flash",
-                        apiKey = "AIzaSyBjrl6BChFKUd6YJfAHs7s15rqgLLZE5uY",
+                        apiKey = "BuildConfig.GENERATIVE_AI_API_KEY",
                         systemInstruction = getSystemPrompt()
                     )
                 }
