@@ -81,14 +81,6 @@ fun CreateWorkoutPlanScreen(
                     .padding(paddingValues)
                     .fillMaxSize()
             ) {
-                item {
-                    Text(
-                        text = "Edit mode",
-                        modifier = Modifier.padding(horizontal = 16.dp, vertical = 4.dp),
-                        style = MaterialTheme.typography.bodyMedium,
-                        color = Color.White
-                    )
-                }
 
                 // Plan Details Section
                 item {

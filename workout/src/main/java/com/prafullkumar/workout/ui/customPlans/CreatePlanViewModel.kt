@@ -28,10 +28,6 @@ class CreatePlanViewModel(
             showToast("Plan name cannot be empty")
             return false
         }
-        if (newPlan.description.isBlank()) {
-            showToast("Plan description cannot be empty")
-            return false
-        }
         if (newPlan.splits.isEmpty()) {
             showToast("Add at least one split to the plan")
             return false

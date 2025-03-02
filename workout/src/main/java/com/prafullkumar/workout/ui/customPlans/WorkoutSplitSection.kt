@@ -58,19 +58,6 @@ fun WorkoutSplitSection(
             SplitHeading(viewModel, index) {
                 showEditSplitNameDialog = it
             }
-            Row(Modifier.fillMaxWidth()) {
-                Text("Description: ${viewModel.newPlan.splits[index].description}")
-                IconButton(
-                    onClick = {
-                        showEditSplitDescriptionDialog = true
-                    }
-                ) {
-                    Icon(
-                        imageVector = Icons.Default.Edit,
-                        contentDescription = "Edit description"
-                    )
-                }
-            }
             viewModel.newPlan.splits[index].exercises.forEachIndexed { exerciseIndex, exercise ->
                 ExerciseRow(exercise, index, exerciseIndex, viewModel)
             }
