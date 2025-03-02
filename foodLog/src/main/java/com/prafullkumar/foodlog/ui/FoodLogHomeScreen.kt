@@ -142,6 +142,7 @@ fun CalorieDetails(
                 }
             }
             CurrentEatenCaloriesBox(currentEatenCalories)
+
             CurrentMacrosSection(todayFoods.sumOf { it.carbs }, todayFoods.sumOf { it.protein }, todayFoods.sumOf { it.fats })
         }
     }

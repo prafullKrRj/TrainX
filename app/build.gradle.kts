@@ -54,9 +54,6 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.firebase.firestore)
     implementation(libs.firebase.auth)
-    implementation(libs.androidx.credentials)
-    implementation(libs.androidx.credentials.play.services.auth)
-    implementation(libs.googleid)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -78,8 +75,10 @@ dependencies {
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
 
+    implementation(project(":workout"))
     implementation(project(":foodLog"))
     implementation(project(":onBoarding"))
     implementation(project(":common"))
-//    implementation(project(":trainxAi"))
+    implementation(project(":profile"))
+    implementation(project(":trainxAi"))
 }
